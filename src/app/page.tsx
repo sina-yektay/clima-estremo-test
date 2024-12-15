@@ -1,101 +1,432 @@
-import Image from "next/image";
+"use client";
+import { Hero } from "@/components/Hero";
+import { Button, Fade } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const router = useRouter();
+  const handleClick3 = () => {
+    router.push("/fenomeno3");
+  };
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  const handleClick2 = () => {
+    router.push("/fenomeno2");
+  };
+
+  const handleClick1 = () => {
+    router.push("/fenomeno1");
+  };
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
+  return (
+    <Fade in={show} timeout={1000}>
+      <div>
+        <Hero />
+        <div
+          style={{
+            width: "100%",
+            height: "300px",
+            backgroundColor: "#404040",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "14px",
+              marginBottom: "20px",
+              color: "white",
+              textAlign: "center",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Animazione del fenomeno metereologico con stile minimal
+          </div>
+          <div
+            style={{
+              fontSize: "110px",
+              color: "gray",
+              fontWeight: 600,
+              lineHeight: "90px",
+            }}
           >
-            Read our docs
-          </a>
+            32:9
+          </div>
+          <div style={{ fontSize: "30px", color: "white", lineHeight: "30px" }}>
+            Fenomeno climatico #1
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          style={{
+            height: "400px",
+            display: "grid",
+            gridTemplateColumns: "repeat(12, 1fr)",
+            padding: "40px",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <div
+            style={{
+              gridColumn: "3 / span 4",
+              backgroundColor: "gray",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <div
+              style={{
+                color: "white",
+                fontWeight: 500,
+                fontSize: "14px",
+                textAlign: "center",
+                marginBottom: "30px",
+              }}
+            >
+              Galleria immagini fenomeno climatico specifico
+            </div>
+            <div
+              style={{
+                color: "white",
+                fontWeight: 700,
+                fontSize: "64px",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              3:2
+            </div>
+          </div>
+          <div
+            style={{
+              gridColumn: "7 / span 4",
+              backgroundColor: "white",
+              paddingLeft: "40px",
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "16px",
+            }}
+          >
+            <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+              NOME SPECIALE
+            </p>
+            <div
+              style={{
+                fontSize: "20px",
+                marginBottom: "32px",
+                fontWeight: 700,
+              }}
+            >
+              Titolo ingaggiante #1
+            </div>
+            <div
+              style={{
+                fontSize: "12px",
+                marginBottom: "50px",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              quibusdam laudantium eos ipsam modi, delectus, quae nobis commodi
+              quis, consectetur magni minima.
+            </div>
+            <Button
+              onClick={handleClick1}
+              sx={{
+                color: "black",
+                fontWeight: 600,
+                backgroundColor: "lightgray",
+                fontSize: "10px",
+                width: "70%",
+                "&:hover": {
+                  backgroundColor: "#1e1e1e", // Dark background color like VSCode
+                  color: "white", // Change text color to white
+                  "& .MuiSvgIcon-root": {
+                    // Target the icon color
+                    color: "white",
+                  },
+                },
+              }}
+              endIcon={<ArrowForwardIcon />}
+            >
+              Approfondisci nella pagina dedicata
+            </Button>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "100%",
+            height: "300px",
+            backgroundColor: "#404040",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <div
+            style={{
+              fontSize: "14px",
+              marginBottom: "20px",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            Animazione del fenomeno metereologico con stile minimal
+          </div>
+          <div
+            style={{
+              fontSize: "110px",
+              color: "gray",
+              fontWeight: 600,
+              lineHeight: "90px",
+            }}
+          >
+            32:9
+          </div>
+          <div style={{ fontSize: "30px", color: "white", lineHeight: "30px" }}>
+            Fenomeno climatico #2
+          </div>
+        </div>
+        <div
+          style={{
+            height: "400px",
+            display: "grid",
+            gridTemplateColumns: "repeat(12, 1fr)",
+            padding: "40px",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <div
+            style={{
+              gridColumn: "3 / span 4",
+              backgroundColor: "gray",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <div
+              style={{
+                color: "white",
+                fontWeight: 500,
+                fontSize: "14px",
+                textAlign: "center",
+                marginBottom: "30px",
+              }}
+            >
+              Galleria immagini fenomeno climatico specifico
+            </div>
+            <div
+              style={{
+                color: "white",
+                fontWeight: 700,
+                fontSize: "64px",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              3:2
+            </div>
+          </div>
+          <div
+            style={{
+              gridColumn: "7 / span 4",
+              backgroundColor: "white",
+              paddingLeft: "40px",
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "16px",
+            }}
+          >
+            <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+              NOME SPECIALE
+            </p>
+            <div
+              style={{
+                fontSize: "20px",
+                marginBottom: "32px",
+                fontWeight: 700,
+              }}
+            >
+              Titolo ingaggiante #2
+            </div>
+            <div
+              style={{
+                fontSize: "12px",
+                marginBottom: "50px",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              quibusdam laudantium eos ipsam modi, delectus, quae nobis commodi
+              quis, consectetur magni minima.
+            </div>
+            <Button
+              onClick={handleClick2}
+              sx={{
+                color: "black",
+                fontWeight: 600,
+                backgroundColor: "lightgray",
+                fontSize: "10px",
+                width: "70%",
+                "&:hover": {
+                  backgroundColor: "#1e1e1e",
+                  color: "white",
+                  "& .MuiSvgIcon-root": {
+                    color: "white",
+                  },
+                },
+              }}
+              endIcon={<ArrowForwardIcon />}
+            >
+              Approfondisci nella pagina dedicata
+            </Button>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "100%",
+            height: "300px",
+            backgroundColor: "#404040",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "14px",
+              marginBottom: "20px",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            Animazione del fenomeno metereologico con stile minimal
+          </div>
+          <div
+            style={{
+              fontSize: "110px",
+              color: "gray",
+              fontWeight: 600,
+              lineHeight: "90px",
+            }}
+          >
+            32:9
+          </div>
+          <div style={{ fontSize: "30px", color: "white", lineHeight: "30px" }}>
+            Fenomeno climatico #3
+          </div>
+        </div>
+        <div
+          style={{
+            height: "400px",
+            display: "grid",
+            gridTemplateColumns: "repeat(12, 1fr)",
+            padding: "40px",
+          }}
+        >
+          <div
+            style={{
+              gridColumn: "3 / span 4",
+              backgroundColor: "gray",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <div
+              style={{
+                color: "white",
+                fontWeight: 500,
+                fontSize: "14px",
+                textAlign: "center",
+                marginBottom: "30px",
+              }}
+            >
+              Galleria immagini fenomeno climatico specifico
+            </div>
+            <div
+              style={{
+                color: "white",
+                fontWeight: 700,
+                fontSize: "64px",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              3:2
+            </div>
+          </div>
+          <div
+            style={{
+              gridColumn: "7 / span 4",
+              backgroundColor: "white",
+              paddingLeft: "40px",
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "16px",
+            }}
+          >
+            <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+              NOME SPECIALE
+            </p>
+            <div
+              style={{
+                fontSize: "20px",
+                marginBottom: "32px",
+                fontWeight: 700,
+              }}
+            >
+              Titolo ingaggiante #3
+            </div>
+            <div
+              style={{
+                fontSize: "12px",
+                marginBottom: "50px",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              quibusdam laudantium eos ipsam modi, delectus, quae nobis commodi
+              quis, consectetur magni minima.
+            </div>
+            <Button
+              onClick={handleClick3}
+              sx={{
+                color: "black",
+                fontWeight: 600,
+                backgroundColor: "lightgray",
+                fontSize: "10px",
+                width: "70%",
+                "&:hover": {
+                  backgroundColor: "#1e1e1e", // Dark background color like VSCode
+                  color: "white", // Change text color to white
+                  "& .MuiSvgIcon-root": {
+                    // Target the icon color
+                    color: "white",
+                  },
+                },
+              }}
+              endIcon={<ArrowForwardIcon />}
+            >
+              Approfondisci nella pagina dedicata
+            </Button>
+          </div>
+        </div>
+      </div>
+    </Fade>
   );
 }
