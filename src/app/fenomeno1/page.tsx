@@ -23,8 +23,8 @@ export default function Fenomeno1() {
           padding: "20px"
         }}
       >
-        <div style={{ fontSize: "50px" }}>Pagina di fenomeno1</div>
-        <div style={{ fontSize: "12px", marginTop: "30px" }}>
+        <div style={{ fontSize: "50px", color: "black" }}>Pagina di fenomeno1</div>
+        <div style={{ fontSize: "12px", marginTop: "30px",  color: "black"  }}>
           (*Clicking the button below we get redirected to the nested page
           inside fenomeno1, we can track the routes on the top of the page and
           go backward in any route by clicking on them. we can create as many nested pages as we need. )

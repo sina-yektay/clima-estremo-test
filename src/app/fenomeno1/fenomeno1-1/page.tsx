@@ -14,7 +14,7 @@ export default function Fenomeno1uno() {
           flexDirection: "column",
         }}
       >
-        <div style={{ fontSize: "50px" }}>Pagina di fenomeno1-1</div>{" "}
+        <div style={{ fontSize: "50px",  color: "black"  }}>Pagina di fenomeno1-1</div>{" "}
       </div>
     </div>
   );

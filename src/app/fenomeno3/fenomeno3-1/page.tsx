@@ -14,7 +14,7 @@ export default function Fenomeno2due() {
           padding: "20px",
         }}
       >
-        <div style={{ fontSize: "50px" }}>Pagina di fenomeno3-1</div>{" "}
+        <div style={{ fontSize: "50px",  color: "black"  }}>Pagina di fenomeno3-1</div>{" "}
       </div>
     </div>
   );

@@ -50,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        style={{ backgroundColor: "white" }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div style={{ zIndex: 200 }}>
@@ -78,7 +79,7 @@ export default function RootLayout({
                   <LogoRai />
                 </div>
 
-                <div  className="appbarMenu">
+                <div className="appbarMenu">
                   <Button
                     onClick={handleClick}
                     sx={{ color: "black", fontWeight: 400 }}
@@ -111,7 +112,7 @@ export default function RootLayout({
                 top: "100px",
                 overflow: "hidden",
                 marginTop: 0,
-               
+
                 backgroundColor: "white",
                 justifyContent: "center",
                 zIndex: 300,
@@ -124,10 +125,7 @@ export default function RootLayout({
                 style={{ display: isOpen ? "grid" : "none", width: "100%" }}
                 className="grid-cols-12 mt-0 w-full"
               >
-                <div
-                  style={{}}
-                  className="appbarContainer"
-                >
+                <div style={{}} className="appbarContainer">
                   <Button
                     onClick={handleLink1}
                     sx={{ color: "black", fontWeight: 400 }}
