@@ -78,7 +78,7 @@ export default function RootLayout({
                   <LogoRai />
                 </div>
 
-                <div className="col-start-11 col-span-2">
+                <div  className="appbarMenu">
                   <Button
                     onClick={handleClick}
                     sx={{ color: "black", fontWeight: 400 }}
@@ -111,7 +111,7 @@ export default function RootLayout({
                 top: "100px",
                 overflow: "hidden",
                 marginTop: 0,
-                boxShadow: "0 10px 10px rgba(0, 0, 0, 0.2)",
+               
                 backgroundColor: "white",
                 justifyContent: "center",
                 zIndex: 300,
@@ -126,7 +126,7 @@ export default function RootLayout({
               >
                 <div
                   style={{}}
-                  className="col-start-2 col-span-4 flex flex-row gap-12"
+                  className="appbarContainer"
                 >
                   <Button
                     onClick={handleLink1}

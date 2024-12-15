@@ -1,0 +1,17 @@
+
+
+
+
+
+
+.breadClass {
+    padding-left: 30px;
+}
+
+
+@media (min-width: 720px) {
+    .breadClass {
+        padding-left: 170px;
+    }
+   
+}

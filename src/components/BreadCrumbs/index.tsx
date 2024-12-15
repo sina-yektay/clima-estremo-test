@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Breadcrumbs, Link, Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import "./index.css";
 
 const BreadCrumbs = () => {
   const pathname = usePathname();
@@ -13,10 +14,9 @@ const BreadCrumbs = () => {
   }, [pathname]);
 
   return (
-    <Breadcrumbs
+    <Breadcrumbs className="breadClass"
       aria-label="breadcrumb"
       separator={<ArrowForwardIosIcon sx={{ fontSize: 16 }} />}
-      style={{ paddingLeft: "170px" }}
     >
       <Link
         component={NextLink}

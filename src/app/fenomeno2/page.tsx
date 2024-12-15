@@ -3,6 +3,7 @@ import BreadCrumbs from "@/components/BreadCrumbs";
 import { Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useRouter } from "next/navigation";
+import "./index.css"
 
 export default function Fenomeno1() {
   const router = useRouter();
@@ -19,6 +20,7 @@ export default function Fenomeno1() {
           alignItems: "center",
           marginTop: "200px",
           flexDirection: "column",
+          padding: "20px",
         }}
       >
         <div style={{ fontSize: "50px" }}>Pagina di fenomeno2</div>
@@ -28,14 +30,13 @@ export default function Fenomeno1() {
           go backward in any route by clicking on them. we can create as many
           nested pages as we need. )
         </div>
-        <Button
+        <Button className="buttonHolder"
           onClick={handleClick3}
           sx={{
             color: "black",
             fontWeight: 600,
             backgroundColor: "lightgray",
             fontSize: "10px",
-            width: "20%",
             marginTop: "10px",
             "&:hover": {
               backgroundColor: "#1e1e1e",

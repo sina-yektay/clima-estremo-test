@@ -19,3 +19,47 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.appbarMenu {
+  grid-column: 10 / span 1;
+}
+
+.appbarContainer {
+  grid-column: 1 / span 11;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pageCnt1 {
+  grid-column: 1 / span 12;
+  height: 200px;
+}
+
+.pageCnt2 {
+  grid-column: 1 / span 12;
+}
+
+.titoloHolder {
+  padding: 0px;
+}
+
+@media (min-width: 720px) {
+  .appbarMenu {
+    grid-column: 11 / span 1;
+  }
+  .appbarContainer {
+    grid-column: 2 / span 4;
+    justify-content: flex-start;
+  }
+  .pageCnt1 {
+    grid-column: 3 / span 4;
+    height: 300px;
+  }
+  .pageCnt2 {
+    grid-column: 7 / span 4;
+  }
+  .titoloHolder {
+    padding: 40px;
+  }
+}

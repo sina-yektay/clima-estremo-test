@@ -11,8 +11,32 @@
 }
 
 .item {
-  grid-column: 2 / span 10;
+  grid-column: 1 / span 12;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.herotext {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.herotitle {
+  font-size: 40px;
+}
+
+@media (min-width: 720px) {
+  .herotext {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .item {
+    grid-column: 2 / span 10;
+  }
+  .herotitle {
+    font-size: 60px;
+  }
 }

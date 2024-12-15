@@ -11,6 +11,7 @@ export default function Fenomeno2due() {
           alignItems: "center",
           marginTop: "200px",
           flexDirection: "column",
+          padding: "20px",
         }}
       >
         <div style={{ fontSize: "50px" }}>Pagina di fenomeno3-1</div>{" "}

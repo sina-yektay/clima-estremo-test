@@ -1,0 +1,9 @@
+.buttonHolder {
+  width: 80%;
+}
+
+@media (min-width: 720px) {
+  .buttonHolder {
+    width: 20%;
+  }
+}

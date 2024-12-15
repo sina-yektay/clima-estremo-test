@@ -8,22 +8,20 @@ export const Hero = () => {
           <div style={{ marginBottom: "16px", textAlign: "center" }}>
             LABEL (18pt)
           </div>
-          <div
+          <div className="herotitle"
             style={{
               marginBottom: "16px",
-              fontSize: "60px",
+        
               fontWeight: 400,
               textAlign: "center",
             }}
           >
             Lorem ipsum dolor sit amet consectetur.
           </div>
-          <div
+          <div className="herotext"
             style={{
               marginBottom: "16px",
               textAlign: "center",
-              fontWeight: 700,
-              fontSize: "21px",
             }}
           >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea

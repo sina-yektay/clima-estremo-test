@@ -29,268 +29,275 @@ export default function Home() {
     <Fade in={show} timeout={1000}>
       <div>
         <Hero />
-        <div
-          style={{
-            width: "100%",
-            height: "300px",
-            backgroundColor: "#404040",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <div style={{ marginBottom: "50px" }}>
           <div
             style={{
-              fontSize: "14px",
-              marginBottom: "20px",
-              color: "white",
-              textAlign: "center",
-            }}
-          >
-            Animazione del fenomeno metereologico con stile minimal
-          </div>
-          <div
-            style={{
-              fontSize: "110px",
-              color: "gray",
-              fontWeight: 600,
-              lineHeight: "90px",
-            }}
-          >
-            32:9
-          </div>
-          <div style={{ fontSize: "30px", color: "white", lineHeight: "30px" }}>
-            Fenomeno climatico #1
-          </div>
-        </div>
-        <div
-          style={{
-            height: "400px",
-            display: "grid",
-            gridTemplateColumns: "repeat(12, 1fr)",
-            padding: "40px",
-          }}
-        >
-          <div
-            style={{
-              gridColumn: "3 / span 4",
-              backgroundColor: "gray",
+              width: "100%",
+              height: "300px",
+              backgroundColor: "#404040",
               display: "flex",
+              flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              flexDirection: "column",
             }}
           >
             <div
               style={{
-                color: "white",
-                fontWeight: 500,
                 fontSize: "14px",
-                textAlign: "center",
-                marginBottom: "30px",
-              }}
-            >
-              Galleria immagini fenomeno climatico specifico
-            </div>
-            <div
-              style={{
+                marginBottom: "20px",
                 color: "white",
-                fontWeight: 700,
-                fontSize: "64px",
                 textAlign: "center",
-                marginBottom: "0px",
               }}
             >
-              3:2
-            </div>
-          </div>
-          <div
-            style={{
-              gridColumn: "7 / span 4",
-              backgroundColor: "white",
-              paddingLeft: "40px",
-              display: "flex",
-              flexDirection: "column",
-              paddingTop: "16px",
-            }}
-          >
-            <p style={{ marginBottom: "16px", fontSize: "9px" }}>
-              NOME SPECIALE
-            </p>
-            <div
-              style={{
-                fontSize: "20px",
-                marginBottom: "32px",
-                fontWeight: 700,
-              }}
-            >
-              Titolo ingaggiante #1
+              Animazione del fenomeno metereologico con stile minimal
             </div>
             <div
               style={{
-                fontSize: "12px",
-                marginBottom: "50px",
-                fontWeight: 400,
-              }}
-            >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
-              quibusdam laudantium eos ipsam modi, delectus, quae nobis commodi
-              quis, consectetur magni minima.
-            </div>
-            <Button
-              onClick={handleClick1}
-              sx={{
-                color: "black",
+                fontSize: "110px",
+                color: "gray",
                 fontWeight: 600,
-                backgroundColor: "lightgray",
-                fontSize: "10px",
-                width: "70%",
-                "&:hover": {
-                  backgroundColor: "#1e1e1e", // Dark background color like VSCode
-                  color: "white", // Change text color to white
-                  "& .MuiSvgIcon-root": {
-                    // Target the icon color
-                    color: "white",
-                  },
-                },
-              }}
-              endIcon={<ArrowForwardIcon />}
-            >
-              Approfondisci nella pagina dedicata
-            </Button>
-          </div>
-        </div>
-
-        <div
-          style={{
-            width: "100%",
-            height: "300px",
-            backgroundColor: "#404040",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              fontSize: "14px",
-              marginBottom: "20px",
-              color: "white",
-              textAlign: "center",
-            }}
-          >
-            Animazione del fenomeno metereologico con stile minimal
-          </div>
-          <div
-            style={{
-              fontSize: "110px",
-              color: "gray",
-              fontWeight: 600,
-              lineHeight: "90px",
-            }}
-          >
-            32:9
-          </div>
-          <div style={{ fontSize: "30px", color: "white", lineHeight: "30px" }}>
-            Fenomeno climatico #2
-          </div>
-        </div>
-        <div
-          style={{
-            height: "400px",
-            display: "grid",
-            gridTemplateColumns: "repeat(12, 1fr)",
-            padding: "40px",
-          }}
-        >
-          <div
-            style={{
-              gridColumn: "3 / span 4",
-              backgroundColor: "gray",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-          >
-            <div
-              style={{
-                color: "white",
-                fontWeight: 500,
-                fontSize: "14px",
-                textAlign: "center",
-                marginBottom: "30px",
+                lineHeight: "90px",
               }}
             >
-              Galleria immagini fenomeno climatico specifico
+              32:9
             </div>
             <div
-              style={{
-                color: "white",
-                fontWeight: 700,
-                fontSize: "64px",
-                textAlign: "center",
-                marginBottom: "0px",
-              }}
+              style={{ fontSize: "30px", color: "white", lineHeight: "30px" }}
             >
-              3:2
+              Fenomeno climatico #1
             </div>
           </div>
           <div
+            className="titoloHolder"
             style={{
-              gridColumn: "7 / span 4",
-              backgroundColor: "white",
-              paddingLeft: "40px",
-              display: "flex",
-              flexDirection: "column",
-              paddingTop: "16px",
+              height: "auto",
+              display: "grid",
+              gridTemplateColumns: "repeat(12, 1fr)",
             }}
           >
-            <p style={{ marginBottom: "16px", fontSize: "9px" }}>
-              NOME SPECIALE
-            </p>
             <div
+              className="pageCnt1"
               style={{
-                fontSize: "20px",
-                marginBottom: "32px",
-                fontWeight: 700,
+                backgroundColor: "gray",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
             >
-              Titolo ingaggiante #2
-            </div>
-            <div
-              style={{
-                fontSize: "12px",
-                marginBottom: "50px",
-                fontWeight: 400,
-              }}
-            >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
-              quibusdam laudantium eos ipsam modi, delectus, quae nobis commodi
-              quis, consectetur magni minima.
-            </div>
-            <Button
-              onClick={handleClick2}
-              sx={{
-                color: "black",
-                fontWeight: 600,
-                backgroundColor: "lightgray",
-                fontSize: "10px",
-                width: "70%",
-                "&:hover": {
-                  backgroundColor: "#1e1e1e",
+              <div
+                style={{
                   color: "white",
-                  "& .MuiSvgIcon-root": {
-                    color: "white",
-                  },
-                },
+                  fontWeight: 500,
+                  fontSize: "14px",
+                  textAlign: "center",
+                  marginBottom: "30px",
+                }}
+              >
+                Galleria immagini fenomeno climatico specifico
+              </div>
+              <div
+                style={{
+                  color: "white",
+                  fontWeight: 700,
+                  fontSize: "64px",
+                  textAlign: "center",
+                  marginBottom: "0px",
+                }}
+              >
+                3:2
+              </div>
+            </div>
+            <div
+              className="pageCnt2"
+              style={{
+                backgroundColor: "white",
+                paddingLeft: "40px",
+                display: "flex",
+                flexDirection: "column",
+                paddingTop: "16px",
               }}
-              endIcon={<ArrowForwardIcon />}
             >
-              Approfondisci nella pagina dedicata
-            </Button>
+              <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+                NOME SPECIALE
+              </p>
+              <div
+                style={{
+                  fontSize: "20px",
+                  marginBottom: "32px",
+                  fontWeight: 700,
+                }}
+              >
+                Titolo ingaggiante #1
+              </div>
+              <div
+                style={{
+                  fontSize: "12px",
+                  marginBottom: "50px",
+                  fontWeight: 400,
+                }}
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+                quibusdam laudantium eos ipsam modi, delectus, quae nobis
+                commodi quis, consectetur magni minima.
+              </div>
+              <Button
+                onClick={handleClick1}
+                sx={{
+                  color: "black",
+                  fontWeight: 600,
+                  backgroundColor: "lightgray",
+                  fontSize: "10px",
+                  width: "70%",
+                  "&:hover": {
+                    backgroundColor: "#1e1e1e", // Dark background color like VSCode
+                    color: "white", // Change text color to white
+                    "& .MuiSvgIcon-root": {
+                      // Target the icon color
+                      color: "white",
+                    },
+                  },
+                }}
+                endIcon={<ArrowForwardIcon />}
+              >
+                Approfondisci nella pagina dedicata
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginBottom: "50px" }}>
+          <div
+            style={{
+              width: "100%",
+              height: "300px",
+              backgroundColor: "#404040",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "14px",
+                marginBottom: "20px",
+                color: "white",
+                textAlign: "center",
+              }}
+            >
+              Animazione del fenomeno metereologico con stile minimal
+            </div>
+            <div
+              style={{
+                fontSize: "110px",
+                color: "gray",
+                fontWeight: 600,
+                lineHeight: "90px",
+              }}
+            >
+              32:9
+            </div>
+            <div
+              style={{ fontSize: "30px", color: "white", lineHeight: "30px" }}
+            >
+              Fenomeno climatico #2
+            </div>
+          </div>
+          <div
+            className="titoloHolder"
+            style={{
+              height: "auto",
+              display: "grid",
+              gridTemplateColumns: "repeat(12, 1fr)",
+            }}
+          >
+            <div
+              className="pageCnt1"
+              style={{
+                backgroundColor: "gray",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <div
+                style={{
+                  color: "white",
+                  fontWeight: 500,
+                  fontSize: "14px",
+                  textAlign: "center",
+                  marginBottom: "30px",
+                }}
+              >
+                Galleria immagini fenomeno climatico specifico
+              </div>
+              <div
+                style={{
+                  color: "white",
+                  fontWeight: 700,
+                  fontSize: "64px",
+                  textAlign: "center",
+                  marginBottom: "0px",
+                }}
+              >
+                3:2
+              </div>
+            </div>
+            <div
+              className="pageCnt2"
+              style={{
+                backgroundColor: "white",
+                paddingLeft: "40px",
+                display: "flex",
+                flexDirection: "column",
+                paddingTop: "16px",
+              }}
+            >
+              <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+                NOME SPECIALE
+              </p>
+              <div
+                style={{
+                  fontSize: "20px",
+                  marginBottom: "32px",
+                  fontWeight: 700,
+                }}
+              >
+                Titolo ingaggiante #2
+              </div>
+              <div
+                style={{
+                  fontSize: "12px",
+                  marginBottom: "50px",
+                  fontWeight: 400,
+                }}
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+                quibusdam laudantium eos ipsam modi, delectus, quae nobis
+                commodi quis, consectetur magni minima.
+              </div>
+              <Button
+                onClick={handleClick2}
+                sx={{
+                  color: "black",
+                  fontWeight: 600,
+                  backgroundColor: "lightgray",
+                  fontSize: "10px",
+                  width: "70%",
+                  "&:hover": {
+                    backgroundColor: "#1e1e1e",
+                    color: "white",
+                    "& .MuiSvgIcon-root": {
+                      color: "white",
+                    },
+                  },
+                }}
+                endIcon={<ArrowForwardIcon />}
+              >
+                Approfondisci nella pagina dedicata
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -330,16 +337,16 @@ export default function Home() {
           </div>
         </div>
         <div
+          className="titoloHolder"
           style={{
-            height: "400px",
+            height: "auto",
             display: "grid",
             gridTemplateColumns: "repeat(12, 1fr)",
-            padding: "40px",
           }}
         >
           <div
+            className="pageCnt1"
             style={{
-              gridColumn: "3 / span 4",
               backgroundColor: "gray",
               display: "flex",
               justifyContent: "center",
@@ -371,8 +378,8 @@ export default function Home() {
             </div>
           </div>
           <div
+            className="pageCnt2"
             style={{
-              gridColumn: "7 / span 4",
               backgroundColor: "white",
               paddingLeft: "40px",
               display: "flex",

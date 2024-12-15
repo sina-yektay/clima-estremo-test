@@ -19,6 +19,7 @@ export default function Fenomeno1() {
           alignItems: "center",
           marginTop: "200px",
           flexDirection: "column",
+          padding: "20px",
         }}
       >
         <div style={{ fontSize: "50px" }}>Pagina di fenomeno3</div>
@@ -29,13 +30,13 @@ export default function Fenomeno1() {
           nested pages as we need. )
         </div>
         <Button
+          className="buttonHolder"
           onClick={handleClick3}
           sx={{
             color: "black",
             fontWeight: 600,
             backgroundColor: "lightgray",
             fontSize: "10px",
-            width: "20%",
             marginTop: "10px",
             "&:hover": {
               backgroundColor: "#1e1e1e",

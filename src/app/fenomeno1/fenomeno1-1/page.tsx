@@ -10,6 +10,7 @@ export default function Fenomeno1uno() {
           justifyContent: "center",
           alignItems: "center",
           marginTop: "200px",
+          padding: "20px",
           flexDirection: "column",
         }}
       >
