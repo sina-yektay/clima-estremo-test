@@ -29,7 +29,7 @@ export default function Home() {
     <Fade in={show} timeout={1000}>
       <div>
         <Hero />
-        <div style={{ marginBottom: "50px" }}>
+        <div style={{ marginBottom: "50px", backgroundColor: "white" }}>
           <div
             style={{
               width: "100%",
@@ -141,7 +141,8 @@ export default function Home() {
                 style={{
                   fontSize: "12px",
                   marginBottom: "50px",
-                  fontWeight: 400, color: "black"
+                  fontWeight: 400,
+                  color: "black",
                 }}
               >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
@@ -261,14 +262,21 @@ export default function Home() {
                 paddingTop: "16px",
               }}
             >
-              <p style={{ marginBottom: "16px", fontSize: "9px", color: "black" }}>
+              <p
+                style={{
+                  marginBottom: "16px",
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
                 NOME SPECIALE
               </p>
               <div
                 style={{
                   fontSize: "20px",
                   marginBottom: "32px",
-                  fontWeight: 700, color: "black"
+                  fontWeight: 700,
+                  color: "black",
                 }}
               >
                 Titolo ingaggiante #2
@@ -277,7 +285,8 @@ export default function Home() {
                 style={{
                   fontSize: "12px",
                   marginBottom: "50px",
-                  fontWeight: 400, color: "black"
+                  fontWeight: 400,
+                  color: "black",
                 }}
               >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
@@ -394,7 +403,9 @@ export default function Home() {
               paddingTop: "16px",
             }}
           >
-            <p style={{ marginBottom: "16px", fontSize: "9px", color: "black" }}>
+            <p
+              style={{ marginBottom: "16px", fontSize: "9px", color: "black" }}
+            >
               NOME SPECIALE
             </p>
             <div
@@ -410,7 +421,8 @@ export default function Home() {
               style={{
                 fontSize: "12px",
                 marginBottom: "50px",
-                fontWeight: 400, color: "black"
+                fontWeight: 400,
+                color: "black",
               }}
             >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
