@@ -11,7 +11,7 @@ export default function Fenomeno1() {
     router.push("/fenomeno2/fenomeno2-1");
   };
   return (
-    <div style={{ marginTop: "150px" }}>
+    <div style={{ marginTop: "150px", backgroundColor: "white" }}>
       <BreadCrumbs />
       <div
         style={{

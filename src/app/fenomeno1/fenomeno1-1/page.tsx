@@ -2,7 +2,7 @@ import BreadCrumbs from "@/components/BreadCrumbs";
 
 export default function Fenomeno1uno() {
   return (
-    <div style={{ marginTop: "150px" }}>
+    <div style={{ marginTop: "150px", backgroundColor: "white" }}>
       <BreadCrumbs />
       <div
         style={{

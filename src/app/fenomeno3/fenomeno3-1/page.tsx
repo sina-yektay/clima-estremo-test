@@ -2,7 +2,7 @@ import BreadCrumbs from "@/components/BreadCrumbs";
 
 export default function Fenomeno2due() {
   return (
-    <div style={{ marginTop: "150px" }}>
+    <div style={{ marginTop: "150px", backgroundColor: "white" }}>
       <BreadCrumbs />
       <div
         style={{
