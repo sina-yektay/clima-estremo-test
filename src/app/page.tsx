@@ -118,7 +118,13 @@ export default function Home() {
                 paddingTop: "16px",
               }}
             >
-              <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+              <p
+                style={{
+                  marginBottom: "16px",
+                  fontSize: "9px",
+                  color: "black",
+                }}
+              >
                 NOME SPECIALE
               </p>
               <div
@@ -126,6 +132,7 @@ export default function Home() {
                   fontSize: "20px",
                   marginBottom: "32px",
                   fontWeight: 700,
+                  color: "black",
                 }}
               >
                 Titolo ingaggiante #1
@@ -134,7 +141,7 @@ export default function Home() {
                 style={{
                   fontSize: "12px",
                   marginBottom: "50px",
-                  fontWeight: 400,
+                  fontWeight: 400, color: "black"
                 }}
               >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
@@ -254,14 +261,14 @@ export default function Home() {
                 paddingTop: "16px",
               }}
             >
-              <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+              <p style={{ marginBottom: "16px", fontSize: "9px", color: "black" }}>
                 NOME SPECIALE
               </p>
               <div
                 style={{
                   fontSize: "20px",
                   marginBottom: "32px",
-                  fontWeight: 700,
+                  fontWeight: 700, color: "black"
                 }}
               >
                 Titolo ingaggiante #2
@@ -270,7 +277,7 @@ export default function Home() {
                 style={{
                   fontSize: "12px",
                   marginBottom: "50px",
-                  fontWeight: 400,
+                  fontWeight: 400, color: "black"
                 }}
               >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
@@ -387,7 +394,7 @@ export default function Home() {
               paddingTop: "16px",
             }}
           >
-            <p style={{ marginBottom: "16px", fontSize: "9px" }}>
+            <p style={{ marginBottom: "16px", fontSize: "9px", color: "black" }}>
               NOME SPECIALE
             </p>
             <div
@@ -403,7 +410,7 @@ export default function Home() {
               style={{
                 fontSize: "12px",
                 marginBottom: "50px",
-                fontWeight: 400,
+                fontWeight: 400, color: "black"
               }}
             >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
